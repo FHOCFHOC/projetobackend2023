@@ -1,32 +1,13 @@
-package com.corinto.primeiroexemplo.model;
+package com.corinto.primeiroexemplo.view.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-@Entity
-public class Produto {    
-   
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-
+public class ProdutoRequest {
     private String nome;
-    
-    private Integer quantidade;
-    
-    private Double valor;
-    
-    private String observacao;
-    
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    private Integer quantidade;
+
+    private Double valor;
+
+    private String observacao;
 
     public String getNome() {
         return nome;

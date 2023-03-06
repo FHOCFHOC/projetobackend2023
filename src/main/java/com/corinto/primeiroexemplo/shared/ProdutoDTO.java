@@ -1,25 +1,17 @@
-package com.corinto.primeiroexemplo.model;
+package com.corinto.primeiroexemplo.shared;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+public class ProdutoDTO {
 
-@Entity
-public class Produto {    
-   
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
     private String nome;
-    
+
     private Integer quantidade;
-    
+
     private Double valor;
-    
+
     private String observacao;
-    
+   
     public Integer getId() {
         return id;
     }
@@ -59,4 +51,5 @@ public class Produto {
     public void setObservacao(String observacao) {
         this.observacao = observacao;
     }
+    
 }
